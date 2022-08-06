@@ -67,10 +67,6 @@ func main() {
 				c.JSON(http.StatusOK,todoList)
 			}
 		})
-		//查看某一个
-		v1Group.GET("/todo/:id", func(c *gin.Context) {
-			
-		})
 		//修改
 		v1Group.PUT("/todo/:id", func(c *gin.Context) {
 			id,ok:=c.Params.Get("id")
